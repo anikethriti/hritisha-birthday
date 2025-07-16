@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Hritisha 🎉</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Comic Sans MS', cursive; }
+    body { background: #ffd6e8; overflow-x: hidden; text-align: center; }
+    section { display: none; padding: 20px; }
+    section.active { display: block; }
+    h1, h2, h3 { color: #ff1493; text-shadow: 1px 1px #fff; margin-bottom: 10px; }
+    .sky {
+      background: linear-gradient(to top, #87ceeb, #ffffff);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .blaster-text {
+      font-size: 1.6em;
+      padding: 0 20px;
+      animation: boom 2s ease-in-out infinite alternate;
+    }
+    @keyframes boom {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); color: #ff00aa; }
+    }
+    button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 20px;
+      margin: 10px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px #ff1493;
+    }
+    .balloon {
+      width: 60px;
+      height: 80px;
+      background: pink;
+      border-radius: 50% 50% 45% 45%;
+      position: absolute;
+      animation: float 6s linear infinite;
+    }
+    @keyframes float {
+      from { top: 100vh; }
+      to { top: -100px; }
+    }
+    .memory-img {
+      width: 90%;
+      max-width: 300px;
+      margin: 10px auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .cake {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      background: url('https://i.imgur.com/yZpNhxL.png') center/cover no-repeat;
+    }
+    .note {
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    audio { display: none; }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="TOHRE_ME_BASE_RANI_HAMRO_PARANWA_HO_-_Male_Version___Viral_Song___Raksh_Music(256k).mp3" type="audio/mp3">
+</audio>
+
+<section id="intro" class="sky active">
+  <h1>🎉 Happy Birthday Hritisha 🎉</h1>
+  <p class="blaster-text">
+    My cutie 🧁, my wifey 💍, my everything 💖, my baccha 👶🏻.<br>
+    God bless you with infinite love 💞, care 🫶, and happiness 🌈 with His blood ✝️, Holy Spirit 🕊️ and Angels 👼.
+  </p>
+  <button onclick="nextSection('game')">Enter the Game 🎈</button>
+</section>
+
+<section id="game">
+  <h2>🎈 Pop the Balloons 🎈</h2>
+  <p>Each balloon has a special word 💖</p>
+  <div id="balloon-area"></div>
+  <button onclick="giveUp()">Give Up 😅</button>
+</section>
+
+<section id="memory">
+  <h2>🖼️ Memory Lane with You 🥺</h2>
+  <div>
+    <img src="1000037353.png" class="memory-img" alt="baby pic">
+    <p>My cute little baby 🍼</p>
+    <img src="1000037352.jpg" class="memory-img" alt="wifey">
+    <p>My loving wifey 💍❤️</p>
+    <img src="1000037351.jpg" class="memory-img" alt="queen">
+    <p>My queen 👑</p>
+  </div>
+  <button onclick="nextSection('cake')">Go to Cake 🎂</button>
+</section>
+
+<section id="cake">
+  <h2>🎂 Make a Wish 🎂</h2>
+  <div class="cake"></div>
+  <p>Blow the candles and make a wish, my love 🌟</p>
+  <button onclick="nextSection('note')">Read My Love Note 💌</button>
+</section>
+
+<section id="note">
+  <h2>💌 My Eternal Love Note 💌</h2>
+  <div class="note">
+    <p>
+      Happy birthday my everything 💖 my love 🥰 my bachaa 👶 my karajaaa ❤️ my cutie pie 🧁 my princess 👸 my ladliiiiiii 👧 my babu 😘 my laxmi 🌺 my Sita 🌸 my Parvati 🌼 my Radha 💫 my oxygen 💨 my water 💧 my food 🍱 my breath 😮‍💨 my reason of living 🫀 — was born today, which is YOU my love 💓<br><br>
+      I am always with you standing back to protect you from everything 🛡️ Let us grow together more higher and higher 🌱🌸 in the mighty name of Jesus ✝️ Ameen 🙏<br><br>
+      May God bless you with all your wishes which you were wanting, which you are wanting, which you will want in the mighty name of Jesus ✝️ Ameen 🙏<br>
+      May God bless you with strength 💪, love 💞, knowledge 📖, and protect you with His blood, His Holy Spirit 🕊️, and His angels 👼 every second of your life ⏳<br><br>
+      I am always with you today, tomorrow, forever and ever till my last breath 🫶🏻<br>
+      I love you and I love you so much ❤️<br>
+      I know I hurt you 😢 — forgive me for my every unintentional mistake 🙏<br><br>
+      You will always live in my heart like a Queen 👑 Today is the happiest day of my life because it’s your birthday 🥳<br>
+      I remember every old memory 🥺 and pray we love each other more deeply day by day ❤️‍🔥<br><br>
+      In the mighty name of Jesus, Ameen ✝️🙏
+    </p>
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = ['intro', 'game', 'memory', 'cake', 'note'];
+
+    function nextSection(id) {
+      sections.forEach(sec => {
+        document.getElementById(sec).classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    window.nextSection = nextSection;
+    window.giveUp = () => nextSection('memory');
+
+    // Balloon Game Setup
+    const balloonWords = ["My cute little baby 🍼", "My world 🌍", "My life ❤️", "My queen 👑", "My princess 👸"];
+    let popped = 0;
+    const area = document.getElementById('balloon-area');
+
+    for (let i = 0; i < 5; i++) {
+      const b = document.createElement('div');
+      b.className = 'balloon';
+      b.style.left = Math.random() * 80 + '%';
+      b.style.backgroundColor = ['#f99', '#f9c', '#fc9', '#cf9', '#9cf'][i % 5];
+      b.onclick = () => {
+        alert(balloonWords[popped]);
+        b.remove();
+        popped++;
+        if (popped === 5) nextSection('memory');
+      };
+      area.appendChild(b);
+    }
+  });
+</script>
+</body>
+</html>
